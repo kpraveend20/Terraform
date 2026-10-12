@@ -1,0 +1,3 @@
+app_name = "praveen-secure-app"
+database_username = "app_user"
+database_password = "example-password-123"

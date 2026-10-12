@@ -1,0 +1,10 @@
+**/.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfplan
+terraform.tfplan
+*.tfvars
+!/day-06/labs/01-tfvars-environment-pattern/env/*.tfvars
+!/day-07/labs/01-production-readiness-checks/production-ready.tfvars
