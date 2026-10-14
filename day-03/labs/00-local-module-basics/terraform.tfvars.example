@@ -1,0 +1,8 @@
+project_name    = "praveen-platform"
+environment     = "dev"
+owner_name      = "praveen-student"
+component_names = ["network", "api"]
+extra_tags = {
+  Training = "Day-03"
+  Purpose  = "Local-Module-Basics"
+}

@@ -1,0 +1,23 @@
+#!/bin/bash
+set -euxo pipefail
+
+dnf update -y
+dnf install -y httpd
+
+cat > /var/www/html/index.html <<EOF
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>${project_name} web server</title>
+  </head>
+  <body>
+    <h1>${project_name} web server</h1>
+    <p>Environment: ${environment}</p>
+    <p>Region: ${region}</p>
+  </body>
+</html>
+EOF
+
+systemctl enable --now httpd

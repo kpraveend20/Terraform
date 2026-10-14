@@ -1,0 +1,12 @@
+aws_region         = "ap-south-1"
+project_name       = "praveen-day2"
+environment        = "dev"
+owner_name         = "your-name"
+vpc_cidr           = "10.20.0.0/16"
+public_subnet_cidr = "10.20.1.0/24"
+http_ingress_cidr  = "0.0.0.0/0"
+instance_type      = "t3.micro"
+root_volume_size   = 8
+
+# Optional: uncomment and set a local AWS CLI profile name.
+# aws_profile = "default"
